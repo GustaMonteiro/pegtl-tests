@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+filename=$(rev <<< $1 | cut -d/ -f1 | rev | cut -d. -f1)
+
+if [[ ! -d ./bin/ ]]; then
+    mkdir bin
+fi
+
+g++ $1 -I./PEGTL/include -std=c++17 -o bin/$filename
