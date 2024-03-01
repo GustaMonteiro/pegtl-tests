@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "tao/pegtl.hpp"
+#include "tao/pegtl/contrib/trace.hpp"
 
 namespace pegtl = tao::pegtl;
 
@@ -121,6 +122,7 @@ int main(int argc, char *argv[])
     KeyValue kv;
 
     pegtl::parse<grammar, action>(in, kv);
+    // pegtl::standard_trace< grammar >( in );
 
     std::cout << kv.key << std::endl;
     std::cout << kv.value << std::endl;

@@ -1,0 +1,21 @@
+[     person]
+
+
+
+name     =                       Gustavo Cesar
+age = 21
+
+
+
+
+email        = gcvm6070@gmail.com
+        birthdate = 16/05/2002
+
+[ car        ]
+                brand = volkswagen
+                model           =                voyage                   
+year =          2018
+
+
+
+color        =           silver
