@@ -14,5 +14,7 @@ include_directories(include)
 create_executable(example1)
 create_executable(ini)
 create_executable(multirules)
+create_executable(list_of_numbers)
+create_executable(json)
 
 file(COPY inputs DESTINATION ${PROJECT_BINARY_DIR})
