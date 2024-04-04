@@ -11,7 +11,6 @@ endfunction()
 
 include_directories(include)
 
-create_executable(chatgpt)
 create_executable(example1)
 create_executable(ini)
 create_executable(multirules)
